@@ -18,12 +18,12 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import chromadb
 import chromadb.config
 
-Thougther_API=st.secrets["API_KEY"]
+Together_API=st.secrets["API_KEY"]
 
 # Page title
 st.set_page_config(page_title='ML Model Building', page_icon='🤖')
 st.title('🤖 ML Model Building')
-
+uploaded=None
 with st.expander('About this app'):
   st.markdown('**What can this app do?**')
   st.info('This app allow users to upload a PDF file about a topic and get a Query response from together LLM.')
@@ -45,7 +45,7 @@ with st.sidebar:
 def load_pdfs_from_file(uploaded_file):
     print(uploaded_file)
     if uploaded_file is not None:
-        folder_path="./dataset"
+        # folder_path="./dataset"
         # file_path = os.path.join(folder_path, uploaded_file)
         # loader = PyPDFLoader(file_path)
         loader = PyPDFLoader(uploaded_file)
@@ -95,11 +95,11 @@ def initialize_model(documents):
         db = Chroma.from_documents(new_pages, embedding_function)
 
         llm = Together(
-        model="meta-llama/Llama-2-70b-chat-hf",
+        model="meta-llama/Llama-3-70b-chat-hf",
         max_tokens=512,
         temperature=0,
         top_k=1,
-        together_api_key=Thougther_API  
+        together_api_key=Together_API  
         )
 
         retriever = db.as_retriever(similarity_score_threshold=0.9)
