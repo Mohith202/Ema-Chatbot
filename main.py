@@ -7,8 +7,8 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Page title
-st.set_page_config(page_title='ML Chatbot', page_icon='🤖')
-st.title('🤖 ML Model Building')
+st.set_page_config(page_title='Ema Chatbot', page_icon='🤖')
+st.title('🤖 ML Chatbot')
 uploaded=None
 with st.expander('About this app'):
   st.markdown('**What can this app do?**')
