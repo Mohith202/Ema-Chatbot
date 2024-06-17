@@ -5,6 +5,8 @@ from langchain_together import Together
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+import chromadb
+import chromadb.config
 
 Together_API = st.secrets["API_KEY"]
 
