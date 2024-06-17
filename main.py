@@ -2,6 +2,9 @@ import streamlit as st
 import os
 from utils import load_pdfs_from_file, load_pdfs_from_folder, save_uploaded_file
 from agent import initialize_model, ConversationalAgent
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Page title
 st.set_page_config(page_title='ML Model Building', page_icon='🤖')
