@@ -1,4 +1,6 @@
 **PROCESS PLANNING OF CHATBOT**
+
+**More detail of the process can be found in "Process_planning_of_chatbot.docx"**
  
 **Step-by-Step Process**
 
