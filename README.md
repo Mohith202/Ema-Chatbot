@@ -1,6 +1,6 @@
 **PROCESS PLANNING OF CHATBOT**
 
-**More detail of the process can be found in "Process_planning_of_chatbot.docx" and live project link is :https://ema-chatbot.streamlit.app/**
+**More detail of the process can be found in "Process_planning_of_chatbot.docx: https://docs.google.com/document/d/1TT4Uw04-QSFhzyTF74MQCTh00UnZ14x_/edit?usp=sharing&ouid=106890396692261549451&rtpof=true&sd=true " and live project link is :https://ema-chatbot.streamlit.app/**
  
 **Step-by-Step Process**
 
