@@ -74,3 +74,7 @@ Building the UI:
 
 •	Can add logs so that if its crash, it should be easy to debug.
 
+**Language Used:**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
