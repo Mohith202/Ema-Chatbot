@@ -7,8 +7,8 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Page title
-st.set_page_config(page_title='ML Model Building', page_icon='🤖')
-st.title('🤖 ML Model Building')
+st.set_page_config(page_title='ML ChatBot', page_icon='🤖')
+st.title('🤖 ML Chatbot')
 uploaded=None
 with st.expander('About this app'):
   st.markdown('**What can this app do?**')
@@ -31,7 +31,7 @@ def add_query_response(query, response):
     st.session_state.query_responses.append({'query': query, 'response': response})
 
 name = st.text_input("Enter your query")
-
+documents=""
 if name:
     query = name
     if uploaded_file:
@@ -40,7 +40,10 @@ if name:
          documents = load_pdfs_from_file(file_path)
     else:
         folder_path = "./dataset"
-        documents = load_pdfs_from_folder(folder_path)
+        if documents:
+            pass
+        else:
+            documents = load_pdfs_from_folder(folder_path)
     
     if documents:
         chain = initialize_model(documents)
