@@ -2,7 +2,7 @@ name:Ema_chatbot
 on:[push]
 jobs:
   build:
-    run-on:ubuntu-latest
+    runs-on:ubuntu-latest
       step:
         -  name: Checkout Repo
            uses: actions/checkout@v3
