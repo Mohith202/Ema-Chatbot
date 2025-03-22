@@ -16,6 +16,6 @@ jobs:
              pip install -r requirements.txt
         -  name: run app
            run: |
-             streamlit run app.py
+             streamlit run main.py
            
     
