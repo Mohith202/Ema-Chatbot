@@ -1,5 +1,5 @@
-name:Ema_chatbot
-on:[push]
+name:  Ema_chatbot
+on:  [push]
 jobs: 
   build:
     runs-on:  ubuntu-latest
